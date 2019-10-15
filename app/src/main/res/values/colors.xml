@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#FFFF00</color>
+    <color name="colorAccent">#D81B60</color>
+    <!-- color untuk gradient background -->
+    <color name="startblue">#223e9c</color>
+    <color name="endblue">#111d5c</color>
+    <!-- color untuk tombol -->
+    <color name="button">#A3E25B</color>
+    <color name="bgutama">#E9E7E7</color>
+</resources>
