@@ -6,11 +6,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@color/startblue">
+    android:background="@color/startcolor">
 
     <View
         android:layout_width="match_parent"
-        android:layout_height="210dp"
+        android:layout_height="350dp"
         android:background="@drawable/gradientbackground"/>
 
     <LinearLayout
@@ -20,20 +20,28 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp">
 
+        <ImageView
+            android:id="@+id/ivsetting"
+            android:layout_gravity="right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            app:srcCompat="@drawable/ic_settings" />
+
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp">
 
-            <ImageView
-                android:layout_width="150dp"
-                android:layout_height="150dp"
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_marginTop="30dp"
                 android:src="@drawable/profile"
                 android:layout_centerHorizontal="true"
-                android:elevation="1dp"
-                app:civ_border_width="3px"
-                app:civ_border_color="@color/endblue">
-            </ImageView>
+                android:elevation="1dp">
+            </de.hdodenhof.circleimageview.CircleImageView>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -43,11 +51,11 @@
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="85dp"
+                    android:layout_marginTop="130dp"
                     app:contentPaddingTop="15dp"
                     app:contentPaddingRight="15dp"
                     app:contentPaddingLeft="15dp"
-                    app:contentPaddingBottom="15dp"
+                    app:contentPaddingBottom="30dp"
                     app:cardCornerRadius="10dp">
 
                     <LinearLayout
@@ -60,15 +68,10 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:layout_marginTop="60dp"
+                            android:textColor="#171717"
                             android:text="Edho Paksi Saputra"
-                            android:textSize="25sp"
+                            android:textSize="30sp"
                             android:textStyle="bold"></TextView>
-
-                        <ImageView
-                            android:layout_width="20dp"
-                            android:layout_height="20dp"
-                            android:src="@drawable/ctg"
-                            android:layout_gravity="center"/>
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -76,26 +79,38 @@
                             android:layout_gravity="center"
                             android:layout_marginTop="5dp"
                             android:text="1718029"
+                            android:textColor="#171717"
                             android:textStyle="bold"
-                            android:textSize="17sp"></TextView>
+                            android:textSize="20sp"></TextView>
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal"
-                            android:layout_marginTop="10dp"
-                            android:text="PT Pencari cinta sejati yang turun ke bumi dan hingga saat ini belum menemukan cinta sejati. Sungguh malang nasib ini :("
-                            android:textAlignment="center"
-                            android:textSize="15sp"
-                            android:textStyle="bold|italic"></TextView>
+                            android:layout_gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/jurusan"
+                            android:textColor="#EB1057"
+                            android:textStyle="bold"
+                            android:textSize="20sp"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/angkatan"
+                            android:textColor="#0C0C0C"
+                            android:textStyle="bold|italic"
+                            android:textSize="20sp"></TextView>
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:layout_marginTop="10dp"
-                            android:text="Tulungagung, Jawa Timur"
-                            android:textSize="18sp"
+                            android:text="@string/alamat"
+                            android:textSize="20sp"
+                            android:textColor="#171717"
                             android:textStyle="bold"></TextView>
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
@@ -121,7 +136,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:textColor="#FFFFFF"
-                            android:text="1,9 JT"
+                            android:text="9000"
                             android:textStyle="bold"
                             android:textSize="35sp"/>
 
@@ -130,8 +145,8 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:textColor="#FFFFFF"
-                            android:text="Followers"
-                            android:textSize="20sp"/>
+                            android:text="@string/followers"
+                            android:textSize="35sp"/>
 
                     </LinearLayout>
 
@@ -156,8 +171,8 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:textColor="#FFFFFF"
-                            android:text="Following"
-                            android:textSize="20sp"/>
+                            android:text="@string/following"
+                            android:textSize="35sp"/>
 
                     </LinearLayout>
 
@@ -173,7 +188,7 @@
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="480dp"
+            android:layout_marginTop="640dp"
             app:cardCornerRadius="10dp"
             app:contentPaddingBottom="15dp"
             app:contentPaddingLeft="15dp"
@@ -184,7 +199,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:text="Social Media"
+                android:text="@string/sosmed"
                 android:textSize="15sp"
                 android:textStyle="bold"></TextView>
 
